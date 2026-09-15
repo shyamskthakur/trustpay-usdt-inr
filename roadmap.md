@@ -1,4 +1,4 @@
 - [x] Build TrustPay mobile-first demo shell and onboarding flows
 - [x] Add dashboard, calculator, deposit, withdrawal, history, profile, support, notifications, and admin preview interactions
 - [x] Apply premium dark command-center design tokens and route metadata
-- [ ] Validate preview rendering, key flows, and current build output
+- [x] Validate preview rendering, key flows, and current build output
