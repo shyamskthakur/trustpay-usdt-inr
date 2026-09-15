@@ -113,7 +113,7 @@ function TrustPayApp() {
   const confirmIndexes = [1, 5, 9];
 
   const openOrder = (order: Order) => { setSelectedOrder(order); setMode("order"); };
-  const beginCreate = () => { setPhrase(generatePhrase()); setMode("backup"); };
+  const beginCreate = () => { setPhrase(generatePhrase().filter((word): word is string => Boolean(word))); setMode("backup"); };
   const restoreSchema = z.string().trim().refine((value) => value.split(/\s+/).filter(Boolean).length === 12, "Enter all 12 recovery words.");
 
   function confirmRecovery() {
